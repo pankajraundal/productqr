@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.description
+    - node.type.book_detail
+  module:
+    - text
+id: node.products.description
+field_name: description
+entity_type: node
+bundle: products
+label: 'Product Details'
+description: 'More specific information about the product.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
