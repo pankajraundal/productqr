@@ -9,7 +9,7 @@ dependencies:
 id: node.products.field_product_image
 field_name: field_product_image
 entity_type: node
-bundle: Products
+bundle: products
 label: 'Product Image'
 description: ''
 required: false

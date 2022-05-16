@@ -1,5 +1,12 @@
 <?php
-namespace Drupal\hello_world\Plugin\Block;
+namespace Drupal\products\Plugin\Block;
+
+use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Entity\EntityDisplayRepositoryInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
+use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Routing\CurrentRouteMatch;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 use Drupal\Core\Block\BlockBase;
 
@@ -64,16 +71,12 @@ class QrCodeBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
-    if ($this->currentNode->bundle() == 'products') {
+   
         return [
             '#markup' => $this->t('This is for QR code'),
           ];
-    }
+    
   }
 
-  /**
-   * Get current node type name.
-   */
-  public 
-
+  
 }
